@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Manrope:wght@700&family=Roboto:ital,wght@1,300&display=swap"
     rel="stylesheet">
@@ -19,6 +20,8 @@
                       <a class="nav__link" href="#">Blog</a>
                       <a class="nav__link" href="#">Word</a>
                       <a class="nav__link" href="#">Contact</a>
+                      <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                      <a class="nav__link" href="#"><i class="fas fa-search"></i></a>
                   </nav>
               </div>
           </div>
@@ -37,10 +40,22 @@
     <div class="slider">
       <div class="container">
         <div class="slider__inner">
-      <div class="slider__item active"><span class="slider__number">01</span> intro</div>
-      <div class="slider__item"><span class="slider__number">02</span> work</div>
-      <div class="slider__item"><span class="slider__number">03</span> about</div>
-      <div class="slider__item"><span class="slider__number">04</span> contacts</div>
+      <div class="slider__item active">
+        <span class="slider__number">01</span>
+        <span class="slider__text">intro</span>
+      </div>
+      <div class="slider__item">
+        <span class="slider__number">02</span>
+        <span class="slider__text">work</span>
+      </div>
+      <div class="slider__item">
+        <span class="slider__number">03</span>
+        <span class="slider__text">about</span>
+      </div>
+      <div class="slider__item">
+        <span class="slider__number">04</span>
+        <span class="slider__text">contacts</span>
+      </div>
     </div>
     </div>
   </div>
@@ -119,46 +134,42 @@
           <h2 class="section__title">Amazing ОЧКО</h2>
       </div>
       <div class="services">
-          <div class="services__item">
+          <div class="services__item services__item--border">
               <img class="services__icon" src="assets\img\services\clock.svg" alt="">
               <div class="services__title">Тупа часы</div>
               <div class="services__text">Залупа ежа часы дракона. Залупа ежа часы дракона.
                 Залупа ежа часы дракона. Залупа ежа часы дракона. Залупа ежа часы дракона. </div>
             </div>
-            <div class="services__item">
+            <div class="services__item services__item--border">
                 <img class="services__icon" src="assets\img\services\rap.svg" alt="">
                 <div class="services__title">Ладно рэпчик</div>
                 <div class="services__text">Епта! Кто такие мусора? Ответ я вам ая, ответ я вам а дам.
                   Опа зигота! ТУПА! Я пажелой ПАВУК.</div>
             </div>
-            <div class="services__item">
+            <div class="services__item services__item--border">
                 <img class="services__icon" src="assets\img\services\troll.svg" alt="">
                 <div class="services__title">затралеровал</div>
                 <div class="services__text">ТЫ сосал тебя еебали гагагага! ТЫ сосал тебя еебали гагагага!
                     ТЫ сосал тебя еебали гагагага! ТЫ сосал тебя еебали гагагага!</div>
             </div>
+            <div class="services__item">
+                <img class="services__icon" src="assets\img\services\book.svg" alt="">
+                <div class="services__title">Книга</div>
+                <div class="services__text">Как нихуя не понять и не подать вида.
+                  Книга на которой выросло не одно поколение.</div>
+              </div>
+              <div class="services__item">
+                  <img class="services__icon" src="assets\img\services\home.svg" alt="">
+                  <div class="services__title">Топ хата</div>
+                  <div class="services__text">Тупа топ хата ин зе форлд</div>
+              </div>
+              <div class="services__item">
+                  <img class="services__icon" src="assets\img\services\audi.svg" alt="">
+                  <div class="services__title">Audi 80</div>
+                  <div class="services__text">Це спортивні седани, що вироблялися кампанією Audi з 1972 по 1995</div>
+              </div>
       </div>
 
-      <hr>
-
-      <div class="services">
-          <div class="services__item">
-              <img class="services__icon" src="assets\img\services\book.svg" alt="">
-              <div class="services__title">Книга</div>
-              <div class="services__text">Как нихуя не понять и не подать вида.
-                Книга на которой выросло не одно поколение.</div>
-            </div>
-            <div class="services__item">
-                <img class="services__icon" src="assets\img\services\home.svg" alt="">
-                <div class="services__title">Топ хата</div>
-                <div class="services__text">Тупа топ хата ин зе форлд</div>
-            </div>
-            <div class="services__item">
-                <img class="services__icon" src="assets\img\services\audi.svg" alt="">
-                <div class="services__title">Audi 80</div>
-                <div class="services__text">Це спортивні седани, що вироблялися кампанією Audi з 1972 по 1995</div>
-            </div>
-      </div>
     </div>
 </section>
 
@@ -193,7 +204,8 @@
 
         <div class="wedo">
             <div class="wedo__item">
-            <img class="devices__item"src="assets\img\wedo-pic.jpg" alt=""></div>
+                <img class="wedo__img" src="assets\img\wedo-pic.jpg" alt="">
+            </div>
             <div class="wedo__item">
                   <div class="accordion">
                       <div class="accordion__item">
@@ -745,35 +757,37 @@
                       <div class="instagram">
                           <a class="instagram__item" href="#" target="_blank">
                           <img src="assets\img\instagram\1.jpg" alt="">
-                        </a>
-                        <a class="instagram__item" href="#" target="_blank">
-                        <img src="assets\img\instagram\2.jpg" alt="">
-                      </a>
-                      <a class="instagram__item" href="#" target="_blank">
-                      <img src="assets\img\instagram\3.jpg" alt="">
-                    </a>
-                    <a class="instagram__item" href="#" target="_blank">
-                    <img src="assets\img\instagram\4.jpg" alt="">
-                  </a>
-                  <a class="instagram__item" href="#" target="_blank">
-                  <img src="assets\img\instagram\5.jpg" alt="">
-                </a>
-                <a class="instagram__item" href="#" target="_blank">
-                <img src="assets\img\instagram\6.jpg" alt="">
-              </a>
-              <a class="instagram__item" href="#" target="_blank">
-              <img src="assets\img\instagram\7.jpg" alt="">
-            </a>
-            <a class="instagram__item" href="#" target="_blank">
-            <img src="assets\img\instagram\8.jpg" alt="">
-          </a>
-          <a class="instagram__item" href="#" target="_blank">
-          <img src="assets\img\instagram\9.jpg" alt="">
-        </a>
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\2.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\3.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\4.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\5.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\6.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\7.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\8.jpg" alt="">
+                          </a>
+                          <a class="instagram__item" href="#" target="_blank">
+                          <img src="assets\img\instagram\9.jpg" alt="">
+                          </a>
                       </div>
                     </div>
                   </div> <!--footer__inner-->
-
+                  <div class="copyright">
+                    @ 2020 Хех Здарова высрано by <span>Yaumamyfrontender</span>
+                  </div>
                 </div> <!--conteiner-->
 
     </footer>
