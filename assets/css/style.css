@@ -99,6 +99,7 @@ hr {
     left: 0;
     right: 0;
     z-index: 1000;
+    transition: padding-top .2s linear;
 }
 .header.fixed {
     background:#eb8d8d;
@@ -123,6 +124,7 @@ hr {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+
 }
 
 
