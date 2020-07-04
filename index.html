@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Manrope:wght@700&family=Roboto:ital,wght@1,300&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/199b4d93ad.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -13,21 +14,21 @@
 
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
       <div class="container">
-          <div class="header__inner">
+          <div class="header__inner" data-scroll="#intro">
               <div class="header__logo">topSite</div>
-                  <nav class="nav">
-                      <a class="nav__link active" href="#">About</a>
-                      <a class="nav__link" href="#">Service</a>
-                      <a class="nav__link" href="#">Blog</a>
-                      <a class="nav__link" href="#">Word</a>
-                      <a class="nav__link" href="#">Contact</a>
+                  <nav class="nav" id="nav">
+                      <a class="nav__link" href="#" data-scroll="#about">About</a>
+                      <a class="nav__link" href="#" data-scroll="#services">Service</a>
+                      <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                      <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                      <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                       <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i></a>
                       <a class="nav__link" href="#"><i class="fas fa-search"></i></a>
                   </nav>
 
-                  <button class="nav-toggle active" type="button">
+                  <button class="nav-toggle" id="nav_toggle" type="button">
                       <span class="nav-toggle__item">Меню</span>
 
                   </button>
@@ -35,7 +36,7 @@
           </div>
 
   </header>
-<div class="intro">
+<div class="intro" id="intro">
   <div class="container">
     <div class="intro__inner">
       <h2 class="intro__suptitle">ОПА ЭФ МИЛЛИАРД</h2>
@@ -68,8 +69,8 @@
     </div>
   </div>
 </div>
-
-<section class="section">
+<!-- about-->
+<section class="section" id="about">
   <div class="container">
       <div class="section__header">
           <h3 class="section__suptitle">What we do</h3>
@@ -110,7 +111,7 @@
 
   </div>
 </section>
-
+<!-- statistics-->
 <div class="statistics">
   <div class="container">
       <div class="stat">
@@ -135,7 +136,8 @@
   </div>
 </div>
 
-<section class="section">
+<!--services-->
+<section class="section" id="services">
     <div class="container">
       <div class="section__header">
           <h3 class="section__suptitle">Мы сосали, нас ебали</h3>
@@ -181,7 +183,7 @@
     </div>
 </section>
 
-
+<!--devices-->
 <section class="section section--devices">
       <div class="container">
 
@@ -198,7 +200,7 @@
       </div>
 </section>
 
-
+<!-- wedo -->
 <section class="section">
       <div class="container">
 
@@ -216,26 +218,26 @@
             </div>
             <div class="wedo__item">
                   <div class="accordion">
-                      <div class="accordion__item">
+                      <div class="accordion__item" data-collapse="#wedo_1">
                       <div class="accordion__header">
                             <img class="accordion__icon" src="assets\img\services\pic.png" alt="">
                             <div class="accordion__title">Photography</div>
 
                       </div>
-                      <div class="accordion__content">Дмитрий! Реально, спасибо за уроки!
-Помню 8 лет назад пытался начать заниматься данным ремеслом, но тогда видосы были на ютубе
- все кривые по данной тематике. Люди снимали уроки пропуская (вырезая) отрывки. В последствии
-  у всех кто делал урок по видео были одни и те же ошибки. Сейчас выбор уроков большой и радует,
-   что можно учиться у профессионалов, которые не жалеют сил дать людям возможность научиться!</div>
+                      <div class="accordion__content" id="wedo_1">Дмитрий! Реально, спасибо за уроки!
+                          Помню 8 лет назад пытался начать заниматься данным ремеслом, но тогда видосы были на ютубе
+                           все кривые по данной тематике. Люди снимали уроки пропуская (вырезая) отрывки. В последствии
+                            у всех кто делал урок по видео были одни и те же ошибки. Сейчас выбор уроков большой и радует,
+                             что можно учиться у профессионалов, которые не жалеют сил дать людям возможность научиться!</div>
                       </div>
 
-                      <div class="accordion__item active">
+                      <div class="accordion__item active" data-collapse="#wedo_2">
                       <div class="accordion__header">
                             <img class="accordion__icon" src="assets\img\services\equ.png" alt="">
                             <div class="accordion__title">Equalazirity</div>
 
                       </div>
-                      <div class="accordion__content">Дмитрий! Реально, спасибо за уроки!
+                      <div class="accordion__content" id="wedo_2">Дмитрий! Реально, спасибо за уроки!
                         Помню 8 лет назад пытался начать заниматься данным ремеслом, но тогда видосы были на ютубе
                         все кривые по данной тематике. Люди снимали уроки пропуская (вырезая) отрывки. В последствии
                         у всех кто делал урок по видео были одни и те же ошибки. Сейчас выбор уроков большой и радует,
@@ -254,17 +256,17 @@
                         что можно учиться у профессионалов, которые не жалеют сил дать людям возможность научиться!</div>
                       </div>
 
-                      <div class="accordion__item">
+                      <div class="accordion__item" data-collapse="#wedo_3">
                       <div class="accordion__header">
                             <img class="accordion__icon" src="assets\img\services\bul.png" alt="">
                             <div class="accordion__title">Web design</div>
 
                       </div>
-                      <div class="accordion__content">Дмитрий! Реально, спасибо за уроки!
-Помню 8 лет назад пытался начать заниматься данным ремеслом, но тогда видосы были на ютубе
- все кривые по данной тематике. Люди снимали уроки пропуская (вырезая) отрывки. В последствии
-  у всех кто делал урок по видео были одни и те же ошибки. Сейчас выбор уроков большой и радует,
-   что можно учиться у профессионалов, которые не жалеют сил дать людям возможность научиться!</div>
+                      <div class="accordion__content" id="wedo_3">Дмитрий! Реально, спасибо за уроки!
+                          Помню 8 лет назад пытался начать заниматься данным ремеслом, но тогда видосы были на ютубе
+                           все кривые по данной тематике. Люди снимали уроки пропуская (вырезая) отрывки. В последствии
+                            у всех кто делал урок по видео были одни и те же ошибки. Сейчас выбор уроков большой и радует,
+                             что можно учиться у профессионалов, которые не жалеют сил дать людям возможность научиться!</div>
                       </div>
                   </div> <!-- accordion -->
             </div><!-- wedo__item -->
@@ -272,28 +274,38 @@
 
       </div>
 </section>
-
+<!--reviews 1-->
 <section class="section section--gray">
       <div class="container">
           <div class="reviews">
-              <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-              <a class="reviews__btn reviews__btn--next" href="#">Next</a>
-            <div class="reviews__item">
-                <img class="reviews__photo" src="assets\img\kasino.jpg" alt="">
-                <div class="reviews__text">"Ёбаный рот этого казино, блядь!
-                  Ты кто такой, сука, чтоб это сделать?
-ВЫ ЧЁ, ДЕБИЛЫ? Вы чё, ебанутые, что ли? Эта сидит там, чешет колоду, блядь.
-ЁБ ТВОЮ МАТЬ! У вас дилер есть, чтобы это делать на моих глазах, мудак ёбаный!"
+                <div data-slider>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets\img\kasino.jpg" alt="">
+                        <div class="reviews__text">"Ёбаный рот этого казино, блядь!
+                              Ты кто такой, сука, чтоб это сделать?
+                            ВЫ ЧЁ, ДЕБИЛЫ? Вы чё, ебанутые, что ли? Эта сидит там, чешет колоду, блядь.
+                            ЁБ ТВОЮ МАТЬ! У вас дилер есть, чтобы это делать на моих глазах, мудак ёбаный!"
+                        </div>
+                        <h3 class="reviews__author">Туз не на месте</h3>
+                    </div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets\img\ava.png" alt="">
+                        <div class="reviews__text">"КУУ ЗЯБЛС !
+                        НА СВЯЗИ НЕПОТНЫЙ КАПИТАН ВАЛЕРИЙ АЛЬБЕРТОВИЧ ЖМЫШЕНКО АТДЕЛЬНАЯ МОТАСТРЕЛКОВАЯ
+                        ТАНКАВАЯ БРИГАДА НЕПОТНОГО ВЗВОДА. БИТВА БЛОГЕРОВ В САМОМ РАЗГАРЕ, А МЕНЯ НЕ ПАЗВАЛИ?
+                        ОТКАЗАНО."
+                        </div>
+                        <h3 class="reviews__author">Туз не на месте</h3>
+                    </div>
+
                 </div>
-                <h3 class="reviews__author">Туз не на месте</h3>
-            </div>
           </div>
 
 
 
       </div>
 </section>
-
+<!-- team-->
 <section class="section">
       <div class="container">
 
@@ -395,6 +407,7 @@
 
       </div><!-- conteiner -->
 </section>
+<!--logos-->
 <section class="section section--gray">
       <div class="container">
             <div class="logos">
@@ -419,7 +432,8 @@
             </div>
       </div><!-- conteiner -->
 </section>
-<section class="section">
+<!--works-->
+<section class="section" id="works">
       <div class="container">
 
         <div class="section__header">
@@ -495,26 +509,35 @@
             </div>
       </div>
   </section>
-
+<!-- review 2 -->
   <section class="section">
         <div class="container">
             <div class="reviews">
-                <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-                <a class="reviews__btn reviews__btn--next" href="#">Next</a>
-              <div class="reviews__item">
-                  <img class="reviews__photo" src="assets\img\ava.png" alt="">
-                  <div class="reviews__text">"КУУ ЗЯБЛС !
-НА СВЯЗИ НЕПОТНЫЙ КАПИТАН ВАЛЕРИЙ АЛЬБЕРТОВИЧ ЖМЫШЕНКО АТДЕЛЬНАЯ МОТАСТРЕЛКОВАЯ
-ТАНКАВАЯ БРИГАДА НЕПОТНОГО ВЗВОДА. БИТВА БЛОГЕРОВ В САМОМ РАЗГАРЕ, А МЕНЯ НЕ ПАЗВАЛИ?
-ОТКАЗАНО."
-                  </div>
-                  <h3 class="reviews__author">Туз не на месте</h3>
-              </div>
+                <div data-slider>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets\img\ava.png" alt="">
+                        <div class="reviews__text">"КУУ ЗЯБЛС !
+                        НА СВЯЗИ НЕПОТНЫЙ КАПИТАН ВАЛЕРИЙ АЛЬБЕРТОВИЧ ЖМЫШЕНКО АТДЕЛЬНАЯ МОТАСТРЕЛКОВАЯ
+                        ТАНКАВАЯ БРИГАДА НЕПОТНОГО ВЗВОДА. БИТВА БЛОГЕРОВ В САМОМ РАЗГАРЕ, А МЕНЯ НЕ ПАЗВАЛИ?
+                        ОТКАЗАНО."
+                        </div>
+                        <h3 class="reviews__author">Туз не на месте</h3>
+                    </div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets\img\kasino.jpg" alt="">
+                        <div class="reviews__text">"Ёбаный рот этого казино, блядь!
+                              Ты кто такой, сука, чтоб это сделать?
+                            ВЫ ЧЁ, ДЕБИЛЫ? Вы чё, ебанутые, что ли? Эта сидит там, чешет колоду, блядь.
+                            ЁБ ТВОЮ МАТЬ! У вас дилер есть, чтобы это делать на моих глазах, мудак ёбаный!"
+                        </div>
+                        <h3 class="reviews__author">Туз не на месте</h3>
+                    </div>
+                </div>
             </div>
           </div>
     </section>
-
-            <section class="section section--clients">
+<!-- clients-->
+    <section class="section section--clients">
                   <div class="container">
 
                     <div class="section__header">
@@ -538,11 +561,10 @@
                                 <div class="clients__name">Запиливальщик</div>
                                 <div class="clients__prof">Поехавший</div>
                                 <div class="clients__text">Быыыстро блядь!!! Мент, чего тебе надо, бля,
-                                   свали отсюда, блядь!!
-Мент, свали отсюда, блядь! Чё те надо у меня дома? А ты меня не видишь что ли? А зачем мне тебя видеть?!
-А зачем тебе мне виидеть?!
- Дверь сделал, блядь! Дверь сделал, блядь! Дверь сделал, блядь! Давай ставь, ёпту, блядь!
-Поставил мне дверь быстро, блядь!</div>
+                                   свали отсюда, блядь!! Мент, свали отсюда, блядь! Чё те надо у меня дома?
+                                   А ты меня не видишь что ли? А зачем мне тебя видеть?! А зачем тебе мне
+                                    виидеть?! Дверь сделал, блядь! Дверь сделал, блядь! Дверь сделал, блядь!
+                                     Давай ставь, ёпту, блядь! Поставил мне дверь быстро, блядь!</div>
                           </div>
                         </div>
                         <div class="clients__item">
@@ -564,9 +586,9 @@
 
                     </div>
                 </div>
-            </section>
-
-            <section class="section">
+    </section>
+<!--blog-->
+<section class="section" id="blog">
                   <div class="container">
 
                     <div class="section__header">
@@ -693,8 +715,8 @@
                     </div>
                 </div>
             </section>
-
-<footer class="footer">
+<!-- footer -->
+<footer class="footer" id="footer">
       <div class="container">
           <div class="footer__inner">
               <div class="footer__col footer__col--first">
@@ -802,5 +824,10 @@
 
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
 </body>
 </html>
